@@ -1,0 +1,48 @@
+[
+  {
+    "name": "qrWireless",
+    "urlName": "qrw",
+    "shortdesc": "PHP-based wireless network QR code printing web application",
+    "gitActive" : false,
+    "urlActive" : true,
+    "picActive" : false,
+    "realURL" : "http://qrw.mjberube.com/",
+    "desc": "<p>qrWireless is a project I created because of my own problems that I’ve had with password encrypted wireless networks. Wireless network passwords are usually long with randomly generated characters so it is difficult to crack, but it can lead to some frustrations if a friend comes over and wants to use the wireless network on his/her cellphone.</p><p>qrWireless solves this by storing your wireless network information on QR codes that are on a printed/saved PDF document. All the user needs to do is scan the QR code and it links your cellphone to the wireless network. qrWireless works for both Android and iOS and doesn’t require you to download an application besides the QR code reader.</p>"
+  },
+  {
+    "name": "Scryer",
+    "urlName": "scryer",
+    "shortdesc": "PHP file-based CMS system",
+    "gitURL" : "https://github.com/mark-berube78/scryer/",
+    "gitActive" : true,
+    "urlActive" : false,
+    "picActive" : false,
+    "desc": "<p>Scryer is a PHP-based Web Content Management System (CMS) that I created as a workaround to address a limitation with a previous web hosting service, which only provided one MySQL database in its subscription package. Other solutions that provided multiple databases were outside of my budget, so I created Scryer to address this limitation and provide additional functionality. Scryer granted full freedom in editing and importing HTML, CSS and PHP, rather than being limited to a set of pre-constructed template formats.</p>"
+  },
+  {
+    "name": "Wordlett",
+    "urlName": "wordlett",
+    "shortdesc": "ASP.NET multiplayer hangman game",
+    "gitURL" : "https://github.com/mark-berube78/sample/tree/master/Wordlett",
+    "gitActive" : true,
+    "urlActive" : false,
+    "picActive" : false,
+    "desc": "<p>Wordlett is a game I came up with when I was at the University of Massachusetts Lowell. I ended up recreating Wordlett several times, each time using a different programming language, because an understanding of each language's fundamentals was important to properly implement the game's mechanics.</p><p>Wordlett is similar to hangman where the player is given a scrambled string of letters, and must de-scramble them into the correct word within a limited number of guesses.</p>"
+  },
+  {
+    "name": "Website designs",
+    "urlName": "designs",
+    "shortdesc": "various portfolio designs",
+    "gitActive" : false,
+    "urlActive" : false,
+    "picActive" : true,
+    "desc": "<p>These are some website designs I've done for friends and random samples I've done to experiment with front-end frameworks.</p>",
+    "gallery" :
+    [
+      {"title":"Louis Emmi's portfolio","img":"/images/sample1.png","url":"http://louemmi.com/"},
+      {"title":"Beach sample portfolio","img":"/images/sample2.png","url":"http://sample.mjberube.com/2/"},
+      {"title":"Previous site's design","img":"/images/sample3.png","url":"http://sample.mjberube.com/3/"},
+      {"title":"Simple portfolio sample","img":"/images/sample4.png","url":"http://sample.mjberube.com/4/"}
+    ]
+  }
+]

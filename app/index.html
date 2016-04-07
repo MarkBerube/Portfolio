@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<!--
+$$\      $$\                     $$\      $$\         
+$$$\    $$$ |                    $$ |     $  |        
+$$$$\  $$$$ | $$$$$$\   $$$$$$\  $$ |  $$\\_/$$$$$$$\ 
+$$\$$\$$ $$ | \____$$\ $$  __$$\ $$ | $$  | $$  _____|
+$$ \$$$  $$ | $$$$$$$ |$$ |  \__|$$$$$$  /  \$$$$$$\  
+$$ |\$  /$$ |$$  __$$ |$$ |      $$  _$$<    \____$$\ 
+$$ | \_/ $$ |\$$$$$$$ |$$ |      $$ | \$$\  $$$$$$$  |
+\__|     \__| \_______|\__|      \__|  \__| \_______/ 
+ $$$$$$\  $$\   $$\               
+$$  __$$\ \__|  $$ |              
+$$ /  \__|$$\ $$$$$$\    $$$$$$\  
+\$$$$$$\  $$ |\_$$  _|  $$  __$$\ 
+ \____$$\ $$ |  $$ |    $$$$$$$$ |
+$$\   $$ |$$ |  $$ |$$\ $$   ____|
+\$$$$$$  |$$ |  \$$$$  |\$$$$$$$\ 
+ \______/ \__|   \____/  \_______|
+                                  
+
+Wasn't expecting somebody to actually read this code, welcome!
+Like most angular applications, most of the cool stuff happens in main scripts/scripts.js if you want to take a look.
+Please don't directly steal this code, it is a lot harder to understand minified code and it would be easier to start
+a fresh project. If you want to get a foundation for an angular application I recommend checking out the angular
+generator for yeoman, this is where this code was originally generated from.
+*https://github.com/yeoman/generator-angular*
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Mark's Site</title>
+  <meta name="description" content="Portfolio of Mark Berube, a software developer that loves to design and create beatiful websites.">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/skeleton.css">
+  <link rel="stylesheet" href="styles/font-awesome.css">
+  <!-- endbuild -->
+
+  <base href="/">
+
+</head>
+<body ng-app="markAngularApp">
+    <!--[if lte IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <div class="container">
+       <div ng-controller="navCtrl">
+        <div ng-if="showNav" class="nav zipper ng-cloak">
+          <div class="container z2 u-pull-right">
+            <h5 class="navInline navBrand"><span class="thin">mark</span> <a href="/">Berube</a></h5>
+            <h6 class="navInline navbar"><a href="about">about</a></h6>
+            <h6 class="navInline navbar"><a href="projects">projects</a></h6>
+            <h6 class="navInline navbar"><a href="contact">contact</a></h6>
+
+            <div class="navInline mobile u-pull-right"><span class="fa fa-navicon fa-2x" ng-click="showMMenu=!showMMenu"></span></div>
+
+            <div ng-show="showMMenu">  
+              <div class="u-pull-right mobileDropDown">
+                <h6><a href="about" ng-click="showMMenu=false">about</a></h6>
+                <h6><a href="projects" ng-click="showMMenu=false">projects</a></h6>
+                <h6><a href="contact" ng-click="showMMenu=false">contact</a></h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div autoscroll="true" class="ng-view zipper ng-animate"></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div>
+          <a class="fa fa-linkedin-square fa-2x" href="http://www.linkedin.com/pub/mark-berube/89/3a5/3" target="_blank"></a>
+          <a class="fa fa-github-square fa-2x" href="https://github.com/mark-berube78/" target="_blank"></a>
+          <a class="fa fa-file fa-2x" ng-href="/data/My_Resume.pdf" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+     (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+     r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+   }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-55175837-1');
+   ga('send', 'pageview');
+   </script>
+
+   <!-- build:js(.) scripts/vendor.js -->
+   <!-- bower:js -->
+   <script src="bower_components/angular/angular.js"></script>
+   <script src="bower_components/angular-animate/angular-animate.js"></script>
+   <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+   <script src="bower_components/angular-resource/angular-resource.js"></script>
+   <script src="bower_components/angular-route/angular-route.js"></script>
+   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+   <!-- endbower -->
+   <!-- endbuild -->
+
+   <!-- build:js({.tmp,app}) scripts/scripts.js -->
+   <script src="scripts/app.js"></script>
+   <script src="scripts/controllers/main.js"></script>
+   <script src="scripts/controllers/about.js"></script>
+   <script src="scripts/controllers/projects.js"></script>
+   <script src="scripts/controllers/project.js"></script>
+   <script src="scripts/controllers/contact.js"></script>
+   <script src="scripts/controllers/nav.js"></script>
+   <script src="scripts/services/navservice.js"></script>
+   <script src="scripts/fonts.js"></script>
+   <!-- endbuild -->
+ </body>
+ </html>

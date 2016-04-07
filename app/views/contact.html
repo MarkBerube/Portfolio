@@ -1,0 +1,36 @@
+<h3 class="pageTitle">Contact<span class="thin"> me</span></h3>
+
+<form validate>
+  <div class="row">
+  	<div class="four columns">
+      <label for="name">Your name</label>
+      <input class="u-full-width" type="text" placeholder="Mark Berube" name="name" ng-model="email.name" required minlength="5" maxlength="50">
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="four columns">
+      <label for="email">Your email</label>
+      <input class="u-full-width" type="email" placeholder="email@gmail.com" name="email" ng-model="email.email" required>
+    </div>
+    <div class="four columns">
+      <label for="subject">Reason for contacting</label>
+      <select class="u-full-width" name="subject" ng-model="email.subject" required>
+      	<option value="">Please select...</option>
+        <option value="opportunities">Opportunities</option>
+        <option value="questions">Questions</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  </div>
+  <label for="comment">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Mark …" name="comment" ng-model="email.comment" rows="10" required minlength="15" maxlength="2000"></textarea>
+
+  <input class="button-primary" type="submit" value="Send" ng-click="sendMail(email)" ng-disabled="emailSuccess">
+</form>
+
+<h6 ng-show="emailSuccess">Success <span class="thin">your email has been sent to Mark.</span></h6>
+<h6 ng-show="emailInvalid">Uh oh <span class="thin">your email was unable to be sent to Mark, please double check the form.</span></h6>
+<h6 ng-show="emailFail">Uh oh <span class="thin">your email was unable to be sent to Mark, please try again later.</span></h6>
+
+<div class="mobileClear">&nbsp;</div>

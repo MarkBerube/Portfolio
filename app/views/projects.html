@@ -1,0 +1,11 @@
+<h3 class="pageTitle">My <span class="thin">projects</span></h3>
+
+<p>These are projects I created during my free time that were often related to hobbies or coursework back when I was in college.</p>
+
+<div ng-repeat="project in projects">
+
+	<h4 class="noMBottom"><a href="projects/{{project.urlName}}">{{project.name}}</a></h4>
+	<p>{{project.shortdesc}}</p>
+</div>
+
+	<div class="mobileClear">&nbsp;</div>

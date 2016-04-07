@@ -1,0 +1,37 @@
+<div ng-repeat="project in projects | filter:{urlName:selectedName}">
+<h3 class="pageTitle">{{project.name}}</h3>
+
+<div ng-bind-html="project.desc"></div>
+
+
+
+<div ng-show="project.picActive">
+	<div ng-repeat="sample in project.gallery">
+
+		<div ng-if="$index == 0 || $index == 2">
+			<row>
+		</div>
+			<div class="six columns"><a href="{{sample.url}}" target="_blank"><img ng-src={{sample.img}} class="thumb" alt="{{sample.title}}"></a>
+			<p class="subtitle">{{sample.title}}</p></div>
+		<div ng-if="$index == 1 || $index == 3">
+			</row>	
+		</div>
+
+	</div>
+</div>
+
+
+<div class="center u-full-width">
+<a href="{{project.realURL}}" ng-show="project.urlActive" target="_blank"><i class="fa fa-link fa-2x"></i> (link)</a>
+&nbsp;
+<a href="{{project.gitURL}}" ng-show="project.gitActive" target="_blank"><i class="fa fa-code fa-2x"></i> (code)</a>
+&nbsp;
+<a href="projects"><i class="fa fa-rotate-left fa-2x"></i> (back)</a>
+</div>
+
+</div>
+
+
+<div class="mobileClear">&nbsp;</div>
+<div class="mobileClear">&nbsp;</div>
+

@@ -1,0 +1,123 @@
+/* main menu elements */
+
+.homeTitle
+{
+  text-align:center;
+  margin-bottom: 0;
+}
+
+/* view elements */
+
+.bgHighlight
+{
+  background-color:#ffce2d;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.footer {
+position:fixed;
+   bottom:0;
+   width:100%;
+   z-index:2;
+   display: inline;
+   letter-spacing: 7px;
+}
+
+.navInline {
+      display: inline;
+      margin-left: 10px;
+   z-index:3;
+}
+
+.nav {
+      margin-top:10px;
+      height: 49px;
+      position: relative;      
+      div
+      {
+        position:fixed;
+      }
+}
+
+.mobileDropDown
+{
+  background-color: #fde392;
+  padding: 25px;
+  border-radius: 5px;
+  z-index:2;
+  right: 0;
+
+  h5 {
+        left:35px;
+  }
+
+  h6 {
+    left:35px;
+    padding: 5px;
+    text-align:center;
+    margin-bottom:0px;
+  }
+  top: 35px;
+
+}
+
+.z2{
+   z-index:2; 
+}
+
+.hide 
+{
+  display:none;
+}
+
+.thumb
+{
+  max-width:75%;
+  height:auto;
+}
+
+.margleftzero
+{
+  margin-left:0;
+}
+
+.mobile
+{
+  position: fixed;
+  right: 15px;
+}
+
+.zipper.ng-animate {
+  transition:0.3s ease all;
+}
+.zipper.ng-enter {
+  opacity:0;
+
+}
+
+.zipper.ng-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  transition-delay: 0.3s;
+
+  /* in case the stagger doesn't work then the duration value
+   must be set to 0 to avoid an accidental CSS inheritance */
+  transition-duration: 0s;
+}
+
+.zipper.ng-enter.ng-enter-active {
+  transition-delay:0.4s;
+  opacity:1;
+  z-index:10;
+}
+.zipper.ng-leave {
+  opacity:1;
+}
+.zipper.ng-leave.ng-leave-active {
+  opacity:0;
+  z-index:9;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
